@@ -1,0 +1,48 @@
+---
+title: "Homework Three Tieli Huang"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+install.packages("tidyverse")
+library(tidyverse)
+
+getwd()
+
+myData <- read.delim("covid-responses.tab", sep="+", header=T)
+
+head(df,n=10)
+
+#Get the dimensions of electric
+dim("covid-responses.tab")
+
+#use histogram to show past week's behavior
+#the frequencies of "stay at home","social gatherings","hand washing","distancing","symptoms of sickness"
+ ggplot("covid-responses.tab", aes(SelfReported_Behavio_1)) +
+  geom_histogram() 
+  
+#histogram best displays the frequencies of the five variables

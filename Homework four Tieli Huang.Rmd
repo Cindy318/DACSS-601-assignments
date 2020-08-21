@@ -1,0 +1,42 @@
+---
+title: "Homework four Tieli Huang"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+#Variable 1 Q36
+Q36 How much do you trust the Italian government to take care of its citizens? oStrongly distrust (1)
+oDistrust (2)
+oNeither trust nor distrust (3)
+oSomewhat trust (4) oStrongly trust (5)
+
+#Variable 2 Q37
+Q37 How much factually truthful do you think the Italian government has been about the coronavirus outbreak?
+oVery untruthful (1)
+oSomewhat untruthful (2) oNeither truthful nor untruthful (3) oSomewhat truthful (4)
+oVery truthful (5)
+
+#Responses to the two questions are closely related because if people do not trust the Italian gov, then chances are high that they would think of the gov as not truthful
